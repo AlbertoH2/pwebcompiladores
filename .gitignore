@@ -1,0 +1,23 @@
+# Python
+*.pyc
+__pycache__/
+*.py[cod]
+
+# Flask
+instance/
+*.db
+*.log
+*.cfg
+*.ini
+
+# Dependencias
+env/
+*.egg-info/
+*.egg/
+
+# Configuración local
+.env
+.flaskenv
+
+# Logs
+logs/

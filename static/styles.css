@@ -1,0 +1,126 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9caca; /* Cambio de color de fondo a un tono de rojo bonito */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+.input-container {
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Monospace';
+    font-size: 16px;
+    resize: none;
+    overflow: hidden;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7f50; /* Cambio de color del botón a un tono de naranja bonito */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6347; /* Cambio de color del botón al pasar el mouse a un tono de rojo más oscuro */
+    transform: translateY(-2px); /* Animación al pasar el mouse */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+}
+
+#resultContainer {
+    width: 90%;
+    max-width: 500px;
+    max-height: 300px;
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#resultContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resultContainer ul li {
+    margin-bottom: 10px;
+    font-family: 'Monospace';
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-container .button-container button {
+    width: calc(33.33% - 5px);
+}
+
+.input-container .button-container input[type="file"] {
+    display: none;
+}
+
+/* Estilos para el botón de carga de archivos */
+.file-label {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff7f50; /* Cambio de color del botón de carga de archivos al mismo tono que los otros botones */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-label:hover {
+    background-color: #ff6347; /* Cambio de color del botón de carga de archivos al pasar el mouse a un tono de rojo más oscuro */
+}
+
+/* Estilos para ocultar el input de archivo */
+.file-label input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Añadir estilos adicionales para cuando se carga un archivo */
+.file-label input[type="file"]:focus + .file-label {
+    outline: 1px solid #007bff;
+    outline: -webkit-focus-ring-color auto 5px;
+}
