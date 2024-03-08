@@ -1,23 +1,6 @@
-# Python
-*.pyc
-__pycache__/
-*.py[cod]
-
-# Flask
-instance/
-*.db
-*.log
-*.cfg
-*.ini
-
-# Dependencias
-env/
-*.egg-info/
-*.egg/
-
-# Configuración local
-.env
+# Common exclusions
+__pycache__
+*.env
+# Flask-specific exclusions
+venv/
 .flaskenv
-
-# Logs
-logs/
